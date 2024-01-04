@@ -1,13 +1,14 @@
-*{
+body{
     
 
     background-color: black;
+
 }
 
 .languagescontainer{
-    width: 600px;
-    height: 500px;
-    text-align: center;
+    width: 400px;
+    height: 300px;
+    text-align: left;
     
     
 
@@ -32,14 +33,15 @@
     transform: translateY(-50%);
     width: 50%;
     color: white;
+    
 }
 
 
 .container .div-img{
     position: absolute ;
     top: 0;
-  right: 0;
-  background-color: transparent;
+    left: 50%;
+    background-color: transparent;
   
  
 
@@ -47,6 +49,8 @@
 
 .container .div-img img{
     background-color: transparent;
+    position: absolute;
+   
     
     
 }
@@ -113,6 +117,8 @@
 
   @media  (max-width: 1050px) {
 
+    
+
     .container{
         flex-direction: column;
     }
@@ -122,13 +128,12 @@
         font-size: 0.8rem; 
         
     }
-    .container .div-img{
-
-        width: 100%;
-        justify-content: center;
-    }
+    .container .div-img,
     .container .div-img img{
-        width: 20%;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        width: 60%;
         
         
         
@@ -138,14 +143,10 @@
         font-size: 0.9rem;
     }
 
-    .container .btnWP{
-        font-size: 0.9rem;
-        
-        
-        
-    }
+    .container .btnWP,
     .container .btnCall{
         font-size: 0.9rem;
+        margin-top: 15px;
     }
 
 
